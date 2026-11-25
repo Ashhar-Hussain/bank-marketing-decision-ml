@@ -1,0 +1,298 @@
+{
+  "leakage": [
+    {
+      "split": "random split",
+      "features": "with duration (leaky)",
+      "roc_auc": 0.9503548221614228,
+      "pr_auc": 0.6758344126747907
+    },
+    {
+      "split": "random split",
+      "features": "without duration",
+      "roc_auc": 0.8048288686966365,
+      "pr_auc": 0.4726884954717481
+    },
+    {
+      "split": "chronological split",
+      "features": "with duration (leaky)",
+      "roc_auc": 0.8145448879700847,
+      "pr_auc": 0.6100443780491529
+    },
+    {
+      "split": "chronological split",
+      "features": "without duration",
+      "roc_auc": 0.6798397973594824,
+      "pr_auc": 0.49352169686912867
+    }
+  ],
+  "rolling": [
+    {
+      "block": 7,
+      "features": "all (no duration)",
+      "model": "logistic regression",
+      "roc_auc": 0.33114332709798106,
+      "pr_auc": 0.07356551798627617,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 7,
+      "features": "all (no duration)",
+      "model": "LightGBM",
+      "roc_auc": 0.5330190930787589,
+      "pr_auc": 0.11214345200203898,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 7,
+      "features": "no calendar",
+      "model": "logistic regression",
+      "roc_auc": 0.32771431335870477,
+      "pr_auc": 0.071968902897273,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 7,
+      "features": "no calendar",
+      "model": "LightGBM",
+      "roc_auc": 0.4696520028381604,
+      "pr_auc": 0.09442613284152651,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 7,
+      "features": "no macro",
+      "model": "logistic regression",
+      "roc_auc": 0.6604689414951945,
+      "pr_auc": 0.20084288071311762,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 7,
+      "features": "no macro",
+      "model": "LightGBM",
+      "roc_auc": 0.6245687931368122,
+      "pr_auc": 0.14972918762614656,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 7,
+      "features": "client + history only",
+      "model": "logistic regression",
+      "roc_auc": 0.6153018770560537,
+      "pr_auc": 0.16203070996514327,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 7,
+      "features": "client + history only",
+      "model": "LightGBM",
+      "roc_auc": 0.5307692059601368,
+      "pr_auc": 0.11811097330729528,
+      "base_rate": 0.10172371934935664
+    },
+    {
+      "block": 8,
+      "features": "all (no duration)",
+      "model": "logistic regression",
+      "roc_auc": 0.6788824569902518,
+      "pr_auc": 0.23151462596615915,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 8,
+      "features": "all (no duration)",
+      "model": "LightGBM",
+      "roc_auc": 0.6773871710846501,
+      "pr_auc": 0.2574484687117341,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 8,
+      "features": "no calendar",
+      "model": "logistic regression",
+      "roc_auc": 0.6469242869561618,
+      "pr_auc": 0.21831933775686121,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 8,
+      "features": "no calendar",
+      "model": "LightGBM",
+      "roc_auc": 0.6296191356318857,
+      "pr_auc": 0.20461990389272555,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 8,
+      "features": "no macro",
+      "model": "logistic regression",
+      "roc_auc": 0.6796625453536494,
+      "pr_auc": 0.23438667199305013,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 8,
+      "features": "no macro",
+      "model": "LightGBM",
+      "roc_auc": 0.6601815936066878,
+      "pr_auc": 0.24820299857226125,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 8,
+      "features": "client + history only",
+      "model": "logistic regression",
+      "roc_auc": 0.6370762657346257,
+      "pr_auc": 0.21775911599901746,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 8,
+      "features": "client + history only",
+      "model": "LightGBM",
+      "roc_auc": 0.6051799098017585,
+      "pr_auc": 0.1985550325799834,
+      "base_rate": 0.1196892449623695
+    },
+    {
+      "block": 9,
+      "features": "all (no duration)",
+      "model": "logistic regression",
+      "roc_auc": 0.7068986060871204,
+      "pr_auc": 0.34597446740899906,
+      "base_rate": 0.157319737800437
+    },
+    {
+      "block": 9,
+      "features": "all (no duration)",
+      "model": "LightGBM",
+      "roc_auc": 0.6058952751368482,
+      "pr_auc": 0.24159566420004036,
+      "base_rate": 0.157319737800437
+    },
+    {
+      "block": 9,
+      "features": "no calendar",
+      "model": "logistic regression",
+      "roc_auc": 0.5937830116200903,
+      "pr_auc": 0.24104005171703047,
+      "base_rate": 0.157319737800437
+    },
+    {
+      "block": 9,
+      "features": "no calendar",
+      "model": "LightGBM",
+      "roc_auc": 0.6542456277943169,
+      "pr_auc": 0.27844133893083667,
+      "base_rate": 0.157319737800437
+    },
+    {
+      "block": 9,
+      "features": "no macro",
+      "model": "logistic regression",
+      "roc_auc": 0.6584548872314167,
+      "pr_auc": 0.2901577902908396,
+      "base_rate": 0.157319737800437
+    },
+    {
+      "block": 9,
+      "features": "no macro",
+      "model": "LightGBM",
+      "roc_auc": 0.5717288040945969,
+      "pr_auc": 0.21846245264731173,
+      "base_rate": 0.157319737800437
+    },
+    {
+      "block": 9,
+      "features": "client + history only",
+      "model": "logistic regression",
+      "roc_auc": 0.6397676426546588,
+      "pr_auc": 0.2652246955587503,
+      "base_rate": 0.157319737800437
+    },
+    {
+      "block": 9,
+      "features": "client + history only",
+      "model": "LightGBM",
+      "roc_auc": 0.6271549807754553,
+      "pr_auc": 0.25611329865145643,
+      "base_rate": 0.157319737800437
+    }
+  ],
+  "selected": [
+    "logistic regression",
+    "no macro"
+  ],
+  "final": [
+    {
+      "index": "logistic regression, no macro (selected)",
+      "roc_auc": 0.6838956457704823,
+      "pr_auc": 0.6408456301704575,
+      "base_rate": 0.4595579305319407
+    },
+    {
+      "index": "LightGBM, no macro (rival)",
+      "roc_auc": 0.620857899612799,
+      "pr_auc": 0.5590900981236666,
+      "base_rate": 0.4595579305319407
+    },
+    {
+      "index": "LightGBM, all features (default)",
+      "roc_auc": 0.6379048388246193,
+      "pr_auc": 0.5979630389612828,
+      "base_rate": 0.4595579305319407
+    }
+  ],
+  "auc_diff_vs_rival": [
+    0.06278360754531778,
+    0.04856010092066332,
+    0.07738244983644402
+  ],
+  "calibration": [
+    {
+      "index": "selected model, raw",
+      "mean_pred": 0.16739698276031661,
+      "brier": 0.30844115314621756,
+      "observed_rate": 0.4595579305319407
+    },
+    {
+      "index": "recalibrated on the latest block",
+      "mean_pred": 0.26230484235371293,
+      "brier": 0.2611893627035692,
+      "observed_rate": 0.4595579305319407
+    },
+    {
+      "index": "constant = true rate (oracle)",
+      "mean_pred": 0.4595579305319407,
+      "brier": 0.24836443901714067,
+      "observed_rate": 0.4595579305319407
+    }
+  ],
+  "policies": [
+    {
+      "policy": "threshold p > c/v on raw probabilities",
+      "called": 0.6929803254797182,
+      "profit": 76875.0
+    },
+    {
+      "policy": "threshold on recalibrated probabilities",
+      "called": 0.9963565703181929,
+      "profit": 92890.0
+    },
+    {
+      "policy": "call everyone",
+      "called": 1.0,
+      "profit": 92935.0
+    },
+    {
+      "policy": "best budget in hindsight",
+      "called": 1.0,
+      "profit": 92935.0
+    }
+  ],
+  "lift": {
+    "0.1": 1.6306795677021446,
+    "0.2": 1.5678864002424995,
+    "0.3": 1.5099883592539651
+  }
+}

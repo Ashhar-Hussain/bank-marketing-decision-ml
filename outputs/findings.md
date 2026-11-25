@@ -1,0 +1,7 @@
+**Leakage and split.** With `duration`, LightGBM scores ROC-AUC 0.950 on a random split. Without it, 0.805 on a random split and 0.680 when the last 20% of calls are predicted from the first 80%.
+
+**Feature sets.** Mean rolling-origin PR-AUC on blocks 7–9: logistic regression / no macro 0.242; logistic regression / all (no duration) 0.217; logistic regression / client + history only 0.215; LightGBM / no macro 0.205; LightGBM / all (no duration) 0.204; LightGBM / no calendar 0.192; LightGBM / client + history only 0.191; logistic regression / no calendar 0.177.
+
+**Selected model on the untouched final block.** logistic regression with 'no macro' (tuned on blocks 7–9): ROC-AUC 0.684, PR-AUC 0.641 at a base rate of 0.460; against LightGBM with 'no macro' the ROC-AUC difference is +0.063 [+0.049, +0.077], and against LightGBM with every feature +0.046 [+0.034, +0.057].
+
+**Decisions.** Raw probabilities averaged 0.167 against an observed rate of 0.460; recalibrating on the latest block moved the mean to 0.262. The ranking held up better: the top 20% of clients by score subscribe at 1.57× the average rate, and at €5 per call and €60 per sale the best calling budget in this period was 100% of clients.
